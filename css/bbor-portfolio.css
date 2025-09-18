@@ -829,9 +829,17 @@ a {
     font-size: 24.89px;
   }
 
-  .tags {
-    font-size: 11.06px;
-  }
+a.textlink {
+  all: unset;            /* wipe all inherited link styles */
+  color: inherit;        /* match paragraph text color */
+  cursor: pointer;       /* keep it clickable */
+}
+
+/* Hover effect */
+a.textlink:hover {
+  color: #B60D0A;        /* your hover color */
+  text-decoration: none; /* ensure no underline appears */
+}
 
   .button {
     height: 80px;
